@@ -68,3 +68,5 @@ if (idParams.length >= 2) {
   dropdown();
   getAllRecords(); // no id given, fetch summaries
 }
+
+getAllRecords();
