@@ -72,10 +72,9 @@ await fetch(`https://api.airtable.com/v0/apprw8LmItCvf4qHG/Table%201`, options)
         <a class="col-lg-3 col-md-6" href="index.html?id=${data.records[i].id}">
         <!-- link to the detailed view-->
 
-            <div class="card my-3 mx-3 col-4">
+            <div class="card my-3 mx-3 border-0">
 
                 <img class="shop-image card-img" src="${shopImage[0].url}">
-
                 <div class="shopCard-list-text card-img-overlay">
                     <h5 class="card-title"><strong>${shopName}</strong></h5>
                     <p class="card-text">${descriptionIdeas}</p>
