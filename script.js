@@ -12,7 +12,7 @@ async function getAllRecords() {
   };
 
   //fetch request
-  await fetch(`https://api.airtable.com/v0/apprw8LmItCvf4qHG/Table%201`, options)
+await fetch(`https://api.airtable.com/v0/apprw8LmItCvf4qHG/Table%201`, options)
     .then((response) => response.json())
     .then((data) => {
       console.log(data); // response is an object / .records array
@@ -20,6 +20,24 @@ async function getAllRecords() {
       getResultElement.innerHTML = ""; // clear everything
 
       let newHtml = "";
+
+    //   carousel only, should only show on the homepage, not detailed. 
+      newHtml+=`
+    <p>pretend this is a carousel</p>
+    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+
+        <div class="carousel-inner">
+            <div class="carousel-item">
+            <img src="resources/img/splash/splash-raw/AmericanCyclerySplash.jpeg" alt="image broken">
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    </div>
+
+    <div class="container">      
+      `
+
 
       for (let i = 0; i < data.records.length; i++) { 
         // defining the columns as variables for quick access
@@ -51,32 +69,26 @@ async function getAllRecords() {
         newHtml += `
         
         
-        <div class="col cardImageText p-2 center">
+        <a href = "index.html?id=${data.records[i].id}">
+        <!-- link to the detailed view-->
 
-            
+            <div class="card my-3 mx-3 col-4">
 
-            <p>${shopName}</p>
-            <a href = "index.html?id=${data.records[i].id}">
-                <p>link which adds unique "?id=..." identifier to the end of the address</p>
-            </a>
+                <img class="shop-image card-img" src="${shopImage[0].url}">
 
-            <img class="shop-image" src="${shopImage[0].url}">
+                <div class="shopCard-list-text card-img-overlay">
+                    <h5 class="card-title"><strong>${shopName}</strong></h5>
+                    <p class="card-text">${descriptionIdeas}</p>
+                    <p class="card-text">
+                        <small>
+                            Learn more
+                        </small>
+                    </p>
+                </div>
+                
+            </div>
+        </a>
 
-            <p>${shopWebsite}</p>
-            <p>${shopAddress}</p>
-            <p>${mapsLink}</p>
-            <p>${mapsEmbedLink}</p>
-            <p>${shopPhone}</p>
-            <p>${shopEmail}</p>
-            <p>${hasRides}</p>
-            <p>${shopHood}</p>
-            <p>${descriptionIdeas}</p>
-            <p>${aboutPage}</p>
-            <p>${zipCode}</p>
-            <p>${contactPage}</p>
-            
-        </div>
-        
 
         
         `;

@@ -16,4 +16,4 @@ https://api.airtable.com/v0/apprw8LmItCvf4qHG/Table%201
 
 ## Color Pallette
 
-Bike shop lane color: 
+Bike shop lane color: #8EC86C
