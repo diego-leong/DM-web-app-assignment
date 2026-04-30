@@ -39,13 +39,10 @@
     <!-- Body begins -->
     <body>
         <!-- Navbar START -->
-        <!-- Navbar START -->
-        <!-- Navbar START -->        
-        <nav class="navbar navbar-expand-lg bg-success-subtle text-decoration-none">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary text-decoration-none">
             <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-            <img src="..." alt="Logo" width="24" height="24" class="d-inline-block align-text-top rounded-circle">
-            The Local Bike Shops of SF
+            <a class="navbar-brand" href="#topofpage">
+            LIST VIEW SIM
             </a> <!-- Click name to top -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,14 +50,17 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <!-- Navigate and scroll to sections -->
-                    <li class="nav-item"> <!-- Needs to change IDS for proper navigation-->
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#topofpage">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="index.html#injectionSite">Shops</a>
+                    <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#footer">Contact</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
                     </li>            
                     <!-- <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -70,39 +70,16 @@
             </div>
         </nav>
         <!-- END Navbar -->
-        <!-- END Navbar -->
         
         <!-- testing if css is applying -->
-        <p class="is-class-working-test">If you can read this, the CSS is linked and works!</p>
+        <p class="is-class-working-test">If you can read this, the detailed view for ${shopName} works!</p>
 
 
-        <!-- INJECTION SITE -->
-        <!-- INJECTION SITE -->
-        <!-- INJECTION SITE -->
-        <div class="container">
+        <!-- Container to inject HTML content from Airtable -->
+         <div class="container">
             <div class="row" id="injectionSite"><!--INJECTION SITE--></div>
-        </div>
-        <!-- END INJECTION SITE -->
-        <!-- END INJECTION SITE -->
+         </div>
 
-        <!-- FOOTER -->
-        <!-- FOOTER -->
-        <!-- FOOTER -->
-        <footer id="footer" class="bg-success-subtle p-5 ">
-            <nav aria-label="breadcrumb ">
-            <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item"><p>&copy; Diego Leong 2026</p></li>
-                <li class="breadcrumb-item"><a href="index.html" target="_top">Home</a></li>
-                <li class="breadcrumb-item"><a href="https://www.linkedin.com/in/diegoleong/" target="_blank">LinkedIn</a></li>
-                <li class="breadcrumb-item"><a href="https://github.com/diego-leong/" target="_blank">Github</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a href="mailto:diegoleongapps@gmail.com" target="_blank">Email</a></li>
-            </ol>
-            </nav>
-            
-            <!-- <p><a href="mailto:abc@def.com">You know where to find me.</a></p> -->
-        </footer>
-        <!-- END FOOTER -->
-        <!-- END FOOTER -->
 
         <!-- Bootstrap JS (must be last) -->
         <script

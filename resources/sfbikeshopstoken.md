@@ -12,3 +12,8 @@ https://airtable.com/apprw8LmItCvf4qHG/api/docs
 
 ## API URL for Fetch request
 https://api.airtable.com/v0/apprw8LmItCvf4qHG/Table%201
+
+
+## Color Pallette
+
+Bike shop lane color: 

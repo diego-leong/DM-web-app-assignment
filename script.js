@@ -50,12 +50,17 @@ async function getAllRecords() {
         //to be injected
         newHtml += `
         
-        <div class="col cardImageText p-2 song-card center">
+        
+        <div class="col cardImageText p-2 center">
+
+            
 
             <p>${shopName}</p>
             <a href = "index.html?id=${data.records[i].id}">
                 <p>link which adds unique "?id=..." identifier to the end of the address</p>
             </a>
+
+            <img class="shop-image" src="${shopImage[0].url}">
 
             <p>${shopWebsite}</p>
             <p>${shopAddress}</p>
@@ -69,7 +74,7 @@ async function getAllRecords() {
             <p>${aboutPage}</p>
             <p>${zipCode}</p>
             <p>${contactPage}</p>
-            <img class="artists-img" src="${shopImage[0].url}">
+            
         </div>
         
 
@@ -124,10 +129,34 @@ async function getOneRecord(id) {
 
         let newHtml = `
             <div>
-            <p>
-                If you can read this, the detailed view for ${shopName} works!
-            </p>
-            </2div>
+                <p class="is-class-working-test">If you can read this, the detailed view for ${shopName} works!</p>
+                <img id="is-id-working-test" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.falklumo.com%2Flumolabs%2Farticles%2Fsharpness%2Fimages%2Fsiemensstern_pentax.jpg&f=1&nofb=1&ipt=2c814ff2860866e394640a62d0427e53905178e04b7d7d8f49440d58df865ad7">
+                <p>a humble image test</p>
+
+
+
+            </div>
+
+            <div>
+                <h1>${shopName}</h1>
+
+                <img class="shop-image" src="${shopImage[0].url}" alt="Photo of the ${shopName} bike shop">
+
+                
+                <p>${shopWebsite}</p>
+                <p>${shopAddress}</p>
+                <p>${mapsLink}</p>
+                <p>${mapsEmbedLink}</p>
+                <p>${shopPhone}</p>
+                <p>${shopEmail}</p>
+                <p>${hasRides}</p>
+                <p>${shopHood}</p>
+                <p>${descriptionIdeas}</p>
+                <p>${aboutPage}</p>
+                <p>${zipCode}</p>
+                <p>${contactPage}</p>
+
+            </div>
         `;
 
         jobsResultElement.innerHTML = newHtml;
