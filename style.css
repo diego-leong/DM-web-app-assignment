@@ -46,3 +46,25 @@ footer{
     transform: scale(1.05);
 }
 
+a {
+    color: #8EC86C;
+}
+
+/* Text styling */
+
+.title-stencil {
+    font-family: "Stardos Stencil";
+    font-weight: bold;
+}
+
+.navbar-brand {
+    color: #8EC86C;
+    outline: black;
+}
+
+.nav-item-lesser:hover {
+    color: #8EC86C;
+    font-family: "Stardos Stencil";
+    /* not working??? */
+
+}

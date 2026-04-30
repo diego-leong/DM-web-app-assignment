@@ -36,7 +36,7 @@ await fetch(`https://api.airtable.com/v0/apprw8LmItCvf4qHG/Table%201`, options)
 
     <!-- About section -->
     <!-- About Title -->
-    <h2 class="fs-1 pb-5 text-center text-white">Explore the Shops</h2> 
+    <h2 class="title-stencil fs-1 pb-5 text-center text-white">Explore the Shops</h2> 
     <!-- About Paragraph -->
     <div class="row">
         <div class="col mx-5">
@@ -86,7 +86,7 @@ await fetch(`https://api.airtable.com/v0/apprw8LmItCvf4qHG/Table%201`, options)
                     <img class="shop-image card-img " src="${shopImage[0].url}" alt="A photo of ${shopName}'s storefront.">
                     
                     <div class="shopCard-list-text card-img-overlay">
-                        <h5 class="card-title"><strong>${shopName}</strong></h5>
+                        <h3 class="title-stencil card-title"><strong>${shopName}</strong></h5>
                         <p class="card-text">
                                 ${shopHood}
                         </p>
@@ -152,24 +152,32 @@ async function getOneRecord(id) {
             let aboutPage = data.fields["aboutPage"];
 
         let newHtml = `
-            <div>
-                <h1>${shopName}</h1>
+            <div class="container mx-5">
+                <header>
+                    <h1 class="title-stencil">${shopName}</h1>
+                    <p>${shopHood}</p>
+                </header>
+                <img class="py-2 shop-image-detail rounded" src="${shopImage[0].url}" alt="Photo of the ${shopName} bike shop">
+                <h2>About</h2>
+                <p>${descriptionIdeas}</p>
+                <p>Does this shop host community rides? <strong>${hasRides}</strong></p>
+                <h2>Location Info</h2>
+                <a class="text-decoration-none" href="${mapsLink}">${shopAddress}<a>
+                <br>
+                <iframe src="${mapsEmbedLink}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <img class="shop-image-detail" src="${shopImage[0].url}" alt="Photo of the ${shopName} bike shop">
+            
+                <h2>Contact</h2>
+                <ul>
+                    <li>${shopEmail}</li>
+                    <li>Phone:${shopPhone}</li>
+                    <li>Contact Page: ${contactPage}</li>
+                    <li>Shop Website: <a class="text-decoration-none" href="${shopWebsite}">${shopWebsite}<a></li>
+                    <li>About Page: ${aboutPage}</li>
+                </ul>
+                                
 
                 
-                <p>${shopWebsite}</p>
-                <p>${shopAddress}</p>
-                <p>${mapsLink}</p>
-                <p>${mapsEmbedLink}</p>
-                <p>${shopPhone}</p>
-                <p>${shopEmail}</p>
-                <p>${hasRides}</p>
-                <p>${shopHood}</p>
-                <p>${descriptionIdeas}</p>
-                <p>${aboutPage}</p>
-                <p>${zipCode}</p>
-                <p>${contactPage}</p>
 
             </div>
         `;
