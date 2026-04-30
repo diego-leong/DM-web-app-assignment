@@ -24,22 +24,23 @@ async function getAllRecords() {
         let genre = data.records[i].fields["Genre"];
         let album = data.records[i].fields["AlbumPhoto1"];
 
+    // Here is where the card/image is generated and the link to the unique id is generated
         newHtml += `
         
         <div class="col cardImageText p-2 song-card center">
-        <a href = "index.html?id=${data.records[i].id}">${
+            <a href = "index.html?id=${data.records[i].id}">${
           album
             ? `<img class="artists-img" src="${album[0].url}" ></img>` // Add album ALT!!!!!
             : ``
         }
-        </a>
+            </a>
         </div>
       
         <div class="info dm-sans">
-        <div>${name}</div>
-        <div>${song}</div>
-        <div>${genre}</div>
-        </div>
+            <div>${name}</div>
+            <div>${song}</div>
+            <div>${genre}</div>
+            </div>
         </div>
         
 

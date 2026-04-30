@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Practice Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Practice Time!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav> -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary text-decoration-none">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Diego Leong</a>
+        <!-- Click name to top -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <!-- Navigate and scroll to sections -->
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#destinations">About Me</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#about">Skills</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#about">Projects</a>
+            </li>            
+            <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="/practice-files/practice-resources/flower-field.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Literally a carousel slide 1</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="/practice-files/practice-resources/purple-sky.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="/practice-files/practice-resources/tree-in-field.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="/practice-files/practice-resources/starry-mountain.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Fourth slide label</h5>
+            <p>Some representative placeholder content for the fourth slide.</p>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <h1 class="text-center p-5 mt-5 mb-5">Code time</h1>
+
+        <div class="w-100 bg-dark-subtle p-5 mb-5">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugiat neque temporibus, quod incidunt quos ipsam blanditiis assumenda earum nam soluta iste, dicta delectus odit esse, consectetur eligendi? Ex rerum quia quaerat, iste reiciendis perspiciatis nam dolore nemo tempora voluptas nostrum omnis corrupti perferendis sint nulla ab commodi animi facilis soluta. Sit illum quas molestiae aliquid sunt totam, repellendus facere asperiores veniam qui quasi quod unde omnis numquam! Natus, ipsa similique consectetur corporis atque omnis blanditiis. Natus odio excepturi officiis tenetur fuga deleniti exercitationem, omnis delectus itaque? Molestiae perspiciatis fuga itaque magni tempora libero! Saepe ea eveniet iure eos voluptates.
+            </p>
+            <div class="text-center">
+            <button type="button" class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=E4WlUXrJgy4">DELETE EVERYTHING</button>
+            </div>
+        </div>
+        <!-- 
+         Destinations header 2 
+         - with a font-size class to keep the h1 size without breaking semantics!
+         - with some padding and margins. -->
+        <h2 id="destinations" class="fs-1 p-5 mt-5 mb-5 text-center">POPULAR DESTINATIONS</h2>
+        <!-- 
+        Cards 
+        - Requires you to plan out columns
+        - Class of row and column within the row
+        -->
+        <div class="row">
+            <!-- column class per card -->
+            <div class="col">
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem;"> <!--kept original width styling for example-->
+                <img src="/practice-files/practice-resources/starry-mountain.jpg" class="card-img-top" alt="test">
+                <div class="card-body">
+                    <h5 class="card-title">Skill Uno</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur odio itaque quam earum, praesentium laborum cum autem sequi facere maxime, provident deleniti explicabo ex ullam sit omnis aspernatur fugit nam.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>               
+            </div>
+            <!-- column class per card -->
+            <div class="col">
+                <!-- Card 2 -->
+                <div class="card" style="width: 40rem;">  <!--changed width styling for example-->
+                <img src="/practice-files/practice-resources/starry-mountain.jpg" class="card-img-top" alt="test">
+                <div class="card-body">
+                    <h5 class="card-title">Skill Dos</h5>
+                    <p class="card-text">This is a card with a larger width styling of 40rem.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>               
+            </div>
+            <!-- column class per card -->
+            <div class="col">
+                <!-- Card 3 -->
+                <div class="card"> <!--Removed width styling for example. It appears to be dynamic and adjust -->
+                <img src="/practice-files/practice-resources/flower-field.jpg" class="card-img-top" alt="test">
+                <div class="card-body">
+                    <h5 class="card-title">Skill Tres</h5>
+                    <p class="card-text">As you can see this has no width styling - this is how a card would appear with no width styling.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>               
+            </div>
+        
+        </div>
+        <!-- End of Cards -->
+        <!-- About us section -->
+            <!-- 
+            - Includes 4 blocks
+            - Inside each block
+            - Different colors
+            - Only wants 2 taking up the width of the browser
+            - col-6 class will determine how much is being taken up
+            -->
+        <h2 id="about" class="fs-1 p-5 mt-5 mb-5 text-center">ABOUT</h2> 
+        <!-- Again, using fs-1 to set consistent heading size while keeping semantics
+         This heading does is NOT centered.
+        -->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- 
+                I noticed that this does not break into smaller cards in a mobile viewport - the cards become very skinny at a thin viewport width. As this div uses col-6, I imagine that's a reason why they're being squashed. Need to explore the col class.
+
+                Also, the div will shrink due to the length of the content and does not have a constant size.
+                How would you keep a consistent size and allow for buffer space?
+                -->
+                <div class="bg-dark-subtle text-white p-5 mt-5 mb-5"> <!-- giving the about us cards some color and space around them -->
+                    <h2>Rates</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, qui distinctio mollitia modi ad, suscipit cum nam at officiis maxime excepturi necessitatibus, aspernatur porro expedita. Voluptates, perferendis harum incidunt temporibus fuga magni fugiat natus ea unde soluta in nesciunt tenetur sint sit aperiam quod voluptate, eum nam ut provident esse.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-secondary text-white p-5 mt-5 mb-5"> <!-- giving the about us cards some color and space around them -->
+                    <h2>Fees</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, qui distinctio mollitia modi ad, suscipit cum nam at officiis maxime excepturi necessitatibus, aspernatur porro expedita. Voluptates, perferendis harum incidunt temporibus fuga magni fugiat natus ea unde soluta in nesciunt tenetur sint sit aperiam quod voluptate, eum nam ut provident esse.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="bg-dark-subtle text-dark p-5 mt-5 mb-5"> <!-- giving the about us cards some color and space around them -->
+                    <h2>Features</h2>
+                    <p>How in the world is this classified as "Dark-subtle" wtf
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="bg-secondary text-white p-5 mt-5 mb-5"> <!-- giving the about us cards some color and space around them -->
+                    <h2>Yuh</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, qui distinctio mollitia modi ad, suscipit cum nam at officiis maxime excepturi necessitatibus, aspernatur porro expedita. Voluptates, perferendis harum incidunt temporibus fuga magni fugiat natus ea unde soluta in nesciunt tenetur sint sit aperiam quod voluptate, eum nam ut provident esse.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Us 
+         - Same heading style as the About section
+        -->
+        <h2 id="contact" class="fs-1 p-5 mt-5 mb-5 text-center">Contact Us</h2>
+        
+        <div class="w-100 bg-dark-subtle p-5 mb-5"> <!-- Reuses paragraph from the beginning in order to establish same look and feel -->
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugiat neque temporibus, quod incidunt quos ipsam blanditiis assumenda earum nam soluta iste, dicta delectus odit esse, consectetur eligendi? Ex rerum quia quaerat, iste reiciendis perspiciatis nam dolore nemo tempora voluptas nostrum omnis corrupti perferendis sint nulla ab commodi animi facilis soluta. Sit illum quas molestiae aliquid sunt totam, repellendus facere asperiores veniam qui quasi quod unde omnis numquam! Natus, ipsa similique consectetur corporis atque omnis blanditiis. Natus odio excepturi officiis tenetur fuga deleniti exercitationem, omnis delectus itaque? Molestiae perspiciatis fuga itaque magni tempora libero! Saepe ea eveniet iure eos voluptates.
+            </p>
+            <div class="text-center">
+            <button type="button" class="btn btn-primary btn-lg"><a href="mailto:abc@def.com" class="text-white text-decoration-none">hmu me bro</a></button> <!-- added link inside button text and removed link styling -->
+            </div>
+        </div>
+        <!-- Image Before footer for fancy -->
+        <h2 class="fs-1 p-5 mt-5 mb-5 text-center">It would be awkward to jump to the footer without this image</h2>        
+        <img src="/practice-files/practice-resources/orange-forest.jpg" class="w-100"> <!-- Without BS' width class, this would only scale to its actual size and get cut off (or if too small, not fill). This makes it responsive, but it will be stuck to be as wide as its container. -->
+
+
+    </div> <!-- End of Container -->
+
+    <!-- Experimental image outside of container -->
+    <img src="/practice-files/practice-resources/orange-forest.jpg" class="w-100"> <!-- Here I placed it outside of the container, and thus it no longer has the default margin -->
+    
+    <!-- Footer -->
+    <footer class="bg-dark-subtle mt-5 p-5 text-center">
+        <p>&copy; Footer? I hardly know her!</p>
+        <p><a href="mailto:abc@def.com">bro hmu alr</a></p>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <!-- JS linking -->
+        <script src="./script.js" defer></script>
         <!-- Google Fonts -->
 
 
@@ -36,10 +37,46 @@
     </head>
     <!-- Body begins -->
     <body>
+        <!-- Navbar START -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary text-decoration-none">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#topofpage">
+            <img src="/resources/images/dleongapps_pfp.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top rounded-circle">
+            Diego Leong
+            </a> <!-- Click name to top -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Navigate and scroll to sections -->
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#topofpage">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                    </li>            
+                    <!-- <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                    </li> -->
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END Navbar -->
+        
+        
+        
 
         <!-- Container to inject HTML content from Airtable -->
          <div class="container">
-            <div class="row" id="bikeshops"><!--INJECTION SITE--></div>
+            <div class="row" id="injectionSite"><!--INJECTION SITE--></div>
          </div>
 
 

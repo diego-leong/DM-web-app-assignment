@@ -1,0 +1,12 @@
+body {
+    background-color: #819476;
+    font-family: lato;
+}
+
+.container {
+    color:white;
+}
+
+#about-text {
+    font-size: 1.5em;
+}
