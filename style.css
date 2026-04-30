@@ -16,7 +16,10 @@
 
 body {
     color: white;
+    background-image: url(resources/img/backgroundsfmap.png);
+    background-size: cover;
     background-color: #232323;
+    
 }
 
 footer{
