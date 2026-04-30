@@ -65,7 +65,7 @@ END CAROUSEL -->
 
     <!-- About section -->
     <!-- About Title -->
-    <h2 class="title-stencil fs-1 pt-5 text-center text-white">Explore the City's Bike Shops</h2> 
+    <h2 class="title-stencil fs-1 text-center text-white">Explore the City's Bike Shops</h2> 
     <!-- About Paragraph -->
     <div class="row">
         <div class="col mx-5">
@@ -195,7 +195,7 @@ async function getOneRecord(id) {
                 <iframe src="${mapsEmbedLink}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             
-                <h2>Contact</h2>
+                <h2 class="pt-3">Contact</h2>
                 <ul>
                     <li>${shopEmail}</li>
                     <li>Phone:${shopPhone}</li>
