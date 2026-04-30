@@ -69,7 +69,7 @@ await fetch(`https://api.airtable.com/v0/apprw8LmItCvf4qHG/Table%201`, options)
         newHtml += `
         
         
-        <a href = "index.html?id=${data.records[i].id}">
+        <a class="col-lg-3 col-md-6" href="index.html?id=${data.records[i].id}">
         <!-- link to the detailed view-->
 
             <div class="card my-3 mx-3 col-4">
