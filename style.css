@@ -1,6 +1,5 @@
-.shop-image {
-    width: auto;
-
+.shop-image-detail {
+    height: 50vh;
 }
 
 .is-class-working-test {
@@ -16,5 +15,28 @@
 }
 
 body {
-    background-color: gray;
+    color: white;
+    background-color: #232323;
+}
+
+.card {
+    height: 30vh;
+    transition: all 0.3s;
+}
+
+.shopCard-list-text {
+    background-color: rgba(116, 255, 116, 0.6); 
+    color: white;
+    opacity: 0;               
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .shopCard-list-text {
+    opacity: 1;           
+}
+
+
+.card:hover {
+    /* add hover effects here */
+    transform: scale(1.05);
 }

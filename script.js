@@ -23,19 +23,30 @@ await fetch(`https://api.airtable.com/v0/apprw8LmItCvf4qHG/Table%201`, options)
 
     //   carousel only, should only show on the homepage, not detailed. 
       newHtml+=`
-    <p>pretend this is a carousel</p>
+    <p class="text-white">pretend this is a carousel</p>
     <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
 
         <div class="carousel-inner">
             <div class="carousel-item">
             <img src="resources/img/splash/splash-raw/AmericanCyclerySplash.jpeg" alt="image broken">
-        </div>
+            </div>
         <div class="overlay"></div>
+        </div>
     </div>
 
-    </div>
+    <!-- About section -->
+    <!-- About Title -->
+    <h2 class="fs-1 pb-5 text-center text-white">Explore the Shops</h2> 
+    <!-- About Paragraph -->
+    <div class="row">
+        <div class="col mx-5">
 
-    <div class="container">      
+            <p id="about-text" class="text-center text-white ms-3 me-3">
+                Discover bike shops across SF and compare locations, specialties, and community vibes to help you choose your perfect shop.
+            </p>
+        </div>
+    </div>    
+         
       `
 
 
@@ -68,30 +79,32 @@ await fetch(`https://api.airtable.com/v0/apprw8LmItCvf4qHG/Table%201`, options)
         //to be injected
         newHtml += `
         
-        
-        <a class="col-lg-3 col-md-6" href="index.html?id=${data.records[i].id}">
-        <!-- link to the detailed view-->
+        <div class="col-xl-4">
+            <a  href="index.html?id=${data.records[i].id}"> <!-- link to the detailed view-->
+                <div class="card ratio ratio-16x9 my-3 mx-1.5 border-0">
 
-            <div class="card my-3 mx-3 border-0">
+                    <img class="shop-image card-img " src="${shopImage[0].url}" alt="A photo of ${shopName}'s storefront.">
+                    
+                    <div class="shopCard-list-text card-img-overlay">
+                        <h5 class="card-title"><strong>${shopName}</strong></h5>
+                        <p class="card-text">
+                                ${shopHood}
+                        </p>
+                        <p class="card-text"><small>${descriptionIdeas}</small></p>
+                    </div>
 
-                <img class="shop-image card-img" src="${shopImage[0].url}">
-                <div class="shopCard-list-text card-img-overlay">
-                    <h5 class="card-title"><strong>${shopName}</strong></h5>
-                    <p class="card-text">${descriptionIdeas}</p>
-                    <p class="card-text">
-                        <small>
-                            Learn more
-                        </small>
-                    </p>
+                    
                 </div>
-                
-            </div>
-        </a>
-
+            </a>
+        </div>
 
         
         `;
+        
       }
+      newHtml +=`
+        `
+
 
       getResultElement.innerHTML = newHtml;
     });
@@ -151,7 +164,7 @@ async function getOneRecord(id) {
             <div>
                 <h1>${shopName}</h1>
 
-                <img class="shop-image" src="${shopImage[0].url}" alt="Photo of the ${shopName} bike shop">
+                <img class="shop-image-detail" src="${shopImage[0].url}" alt="Photo of the ${shopName} bike shop">
 
                 
                 <p>${shopWebsite}</p>
