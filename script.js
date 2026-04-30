@@ -153,15 +153,6 @@ async function getOneRecord(id) {
 
         let newHtml = `
             <div>
-                <p class="is-class-working-test">If you can read this, the detailed view for ${shopName} works!</p>
-                <img id="is-id-working-test" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.falklumo.com%2Flumolabs%2Farticles%2Fsharpness%2Fimages%2Fsiemensstern_pentax.jpg&f=1&nofb=1&ipt=2c814ff2860866e394640a62d0427e53905178e04b7d7d8f49440d58df865ad7">
-                <p>a humble image test</p>
-
-
-
-            </div>
-
-            <div>
                 <h1>${shopName}</h1>
 
                 <img class="shop-image-detail" src="${shopImage[0].url}" alt="Photo of the ${shopName} bike shop">

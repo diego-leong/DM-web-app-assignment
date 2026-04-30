@@ -19,13 +19,18 @@ body {
     background-color: #232323;
 }
 
+footer{
+    color:black;
+    /* must override the body style */
+}
+
 .card {
     height: 30vh;
     transition: all 0.3s;
 }
 
 .shopCard-list-text {
-    background-color: rgba(116, 255, 116, 0.6); 
+    background-color: rgba(0, 40, 0, 0.7); 
     color: white;
     opacity: 0;               
     transition: opacity 0.3s ease-in-out;
@@ -40,3 +45,4 @@ body {
     /* add hover effects here */
     transform: scale(1.05);
 }
+
