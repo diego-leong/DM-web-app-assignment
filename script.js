@@ -23,26 +23,54 @@ await fetch(`https://api.airtable.com/v0/apprw8LmItCvf4qHG/Table%201`, options)
 
     //   carousel only, should only show on the homepage, not detailed. 
       newHtml+=`
-    <p class="text-white">pretend this is a carousel</p>
-    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+<!-- CAROUSEL
+<div id="carouselExample" class="carousel slide carousel-fade" 
+     data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
 
-        <div class="carousel-inner">
-            <div class="carousel-item">
-            <img src="resources/img/splash/splash-raw/AmericanCyclerySplash.jpeg" alt="image broken">
-            </div>
-        <div class="overlay"></div>
-        </div>
+  <div class="carousel-inner">
+
+    <div class="carousel-item active position-relative">
+      <img class="splash-image" src="/resources/img/splash/splash-raw/AmericanCyclerySplash.jpeg" 
+           class="d-block w-100 rounded" alt="image broken">
+      <div class="overlay"></div>
     </div>
+
+    <div class="carousel-item position-relative">
+      <img class="splash-image" src="resources/img/splash/splash-raw/bespoke.webp" 
+           class="d-block w-100 rounded" alt="image broken">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="carousel-item position-relative">
+      <img class="splash-image" src="resources/img/splash/splash-raw/huckleberrySplash.webp" 
+           class="d-block w-100 rounded" alt="image broken">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="carousel-item position-relative">
+      <img class="splash-image" src="resources/img/splash/splash-raw/NewWheelSplash.webp" 
+           class="d-block w-100 rounded" alt="image broken">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="carousel-item position-relative">
+      <img class="splash-image" src="resources/img/splash/splash-raw/roaringsplash.jpg" 
+           class="d-block w-100 rounded" alt="image broken">
+      <div class="overlay"></div>
+    </div>
+
+  </div>
+</div>
+END CAROUSEL -->
 
     <!-- About section -->
     <!-- About Title -->
-    <h2 class="title-stencil fs-1 pb-5 text-center text-white">Explore the Shops</h2> 
+    <h2 class="title-stencil fs-1 pt-5 text-center text-white">Explore the City's Bike Shops</h2> 
     <!-- About Paragraph -->
     <div class="row">
         <div class="col mx-5">
-
             <p id="about-text" class="text-center text-white ms-3 me-3">
-                Discover bike shops across SF and compare locations, specialties, and community vibes to help you choose your perfect shop.
+                Discover bike shops across San Francisco and compare locations, specialties, and community vibes to help you choose your perfect shop.
             </p>
         </div>
     </div>    
